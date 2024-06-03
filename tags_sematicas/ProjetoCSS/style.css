@@ -14,13 +14,16 @@ ul{
     list-style-type: none;
     text-align: right;
 }
+
 ul li{
     display: inline-block;
+    padding: 10px 0px;
+    margin: 0px 5px;
 }
 .hero a{
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.308);
     border: 1px solid white;
-    margin: 0px 5px;
     color: white;
     border-radius: 0px 0px 5px 5px;
     border-top: none;
@@ -33,16 +36,13 @@ ul li{
 }
 header.hero{
     background-image: url(imagens/bg-3.jpg);
-    margin: 0px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     height: 450px;
-    padding: 0px 30px 20px;
+    padding: 0px 30px;
 }
 .titulo_principal{
-    width: 60%;
-    margin: auto;
     text-align: center;
 }
 h1{
@@ -63,6 +63,7 @@ header p{
 }
 main{
     width: 60%;
+    min-width: 420px;
     margin: auto;
 }
 article{
@@ -74,13 +75,16 @@ h2{
     padding: 10px;
     background-color: rgb(228, 228, 228);
     border-bottom: 1px solid darkgray;
+    margin: 10px 0px;
 }
-a{
-    display: inline-block;
+a.link_botao{
+    display: block;
     background-color: lightgray;
     padding: 10px;
     margin: 10px 0px;
     border-radius: 4px;
+    margin-left: auto;
+    width: fit-content;
 }
 footer{
     padding: 20px;
@@ -90,4 +94,5 @@ footer{
 footer p{
     color: white;
     text-shadow: 1px 1px 0px black;
+    margin-bottom: 0px;
 }
