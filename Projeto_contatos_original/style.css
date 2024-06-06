@@ -11,7 +11,7 @@ body {
     min-height: 100vh;
 }
 
-.main-title {
+.main-title{
     color: green;
 }
 .list_wrapper{
@@ -30,16 +30,34 @@ body {
 .list_item{
     display: flex;
     align-items: center;
-    justify-content: center;
     padding: 20px;
+    border-bottom: 1px solid #cacaca;
+}
+.list_item:hover{
+    background-color: lightgray;
 }
 .list_item div{
     flex-grow: 1;
 }
 .list_item_action{
     display: flex;
+    gap: 16px;
+    justify-content: center;
+    opacity: 0;    
 }
-.list_item_action > *{
-    flex-grow: 1;
-    text-align: center;
+.list_item:hover .list_item_action{
+    opacity: 0.45;
+}
+.list_item_imagem img{
+    width: 110px;
+    border-radius: 50%;
+}
+.list_item_name{
+    font-size: 1.5em;
+    color: green;
+    margin: 0px;
+}
+.list_item_email{
+    margin: 8px 0px 0px;
+    color: rgb(100, 100, 100);
 }
