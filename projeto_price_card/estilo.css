@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(17, 17, 17);
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main_title{
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    margin: 46px 0px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #05080a;
+    padding: 16px;
+}
+
+.header_logo{
+    font-size: 2.3em;
+    text-transform: uppercase;
+    margin-left: 16px;
+}
+.header_nav ul{
+    display: flex;
+    font-size: 16px;
+    list-style-type: none;
+    gap: 16px;
+}
+
+.header_nav a{
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 6px;
+}
+.header_nav a:hover{
+    text-decoration: underline;
+}
+a.header_nav_active{
+    background-color: green;
+    color: black;
+    pointer-events: none;
+}
