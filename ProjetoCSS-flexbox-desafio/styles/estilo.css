@@ -2,7 +2,7 @@
 
 html,
 body {
-    min-height: 100%;
+    min-height: 100vh;
 }
 
 body {
@@ -14,11 +14,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 960px;
-    min-width: 80%;
-    margin: 0px auto;
+    gap: 32px;
 }
-header{
+.hero{
     margin-top: 48px;
     color: white;
 }
@@ -27,31 +25,33 @@ h1{
     text-transform: uppercase;
     text-shadow: 2px 2px 0px black;
 }
-header p{
+.hero p{
     padding: 8px;
     background-color: rgba(0, 0, 0, 0.521);
     text-align: center;
     border-bottom: 2px solid white;
 }
-section{
+.card_content{
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     gap: 12px;
     padding: 8px;
+    width: 930px;
+    min-width: 80%;
 }
-section div{
+.card_content div{
     flex-grow: 1;
 }
-section div:hover{
+.card_content div:hover{
     opacity: .8;
     transition: 0.5s;
 }
-section div img{
+.card_content div img{
+    display: block;
     width: 100%;
-    margin-bottom: -4px;
 }
-section div p{
+.card_content div p{
     background-color: rgb(20, 20, 20);
     color: white;
     margin: 0px;
