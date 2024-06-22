@@ -50,25 +50,11 @@ body{
     color: var(--neutral-dark);
 }
 
-.footer-main{
-    padding: 16px;
-    background-color: var(--neutral-dark);
-    text-align: center;
-    color: white;
-    font-size: 2rem;
-}
-.footer-main a{
-    color: var(--primary);
-    text-decoration: none;
-}
-.footer-main a:hover{
-    text-decoration: underline;
-}
+/****************************/
 
 .hero{
     display: flex;
     justify-content: space-around;
-    /* padding: 0px 64px; */
     background:linear-gradient(0deg, #FFEF61, #ffffff);
 }
 .hero img{
@@ -88,11 +74,78 @@ body{
     width: 40%;
     gap: 24px;
 }
-.hero .content a{
-    padding: 8px 16px;
+.button{
+    padding: 12px 32px;
     background-color: var(--primary);
     color: var(--neutral-dark);
-    border-radius: 4px;
+    border-radius: 6px;
     font-size: 2rem;
     text-decoration: none;
+    transition-duration: 0.2s;
+}
+
+.button:hover{
+    background-color: var(--neutral-dark);
+    color: var(--primary);
+}
+
+.principais_cursos{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.principais_cursos h2{
+    font-size: 4rem;
+    text-align: center;
+    margin: 40px;
+}
+.principais_cursos .cursos{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    padding: 0px 64px;
+}
+.principais_cursos .cursos .curso{
+    width: 28%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid gray;
+    margin-bottom: 32px;
+    transition-duration: .4s;
+}
+.principais_cursos .cursos .curso:hover{
+    width: 32%;
+    cursor: pointer;
+}
+.principais_cursos .cursos .curso img{
+    width: 100%;
+}
+.principais_cursos .cursos .curso h3{
+    font-size: 2rem;
+    margin: 12px;
+
+}
+.principais_cursos .cursos .curso p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    padding: 0px 16px;
+    margin: 0px auto 24px;
+}
+
+/****************************/
+
+.footer-main{
+    padding: 16px;
+    background-color: var(--neutral-dark);
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+.footer-main a{
+    color: var(--primary);
+    text-decoration: none;
+}
+.footer-main a:hover{
+    text-decoration: underline;
 }
