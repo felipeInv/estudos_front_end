@@ -73,6 +73,7 @@ body{
     align-items: flex-start;
     width: 40%;
     gap: 24px;
+    padding-left: 32px;
 }
 .button{
     padding: 12px 32px;
@@ -95,7 +96,7 @@ body{
     align-items: center;
 }
 
-.principais_cursos h2{
+.subtitulo{
     font-size: 4rem;
     text-align: center;
     margin: 40px;
@@ -133,9 +134,44 @@ body{
     margin: 0px auto 24px;
 }
 
+.nossa_escola{
+    background-color: #003464;
+    display: flex;
+    color: white;
+    margin-top: 40px;
+}
+.nossa_escola img{
+    width: 50%;
+}
+
+.nossa_escola .content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 64px;
+}
+
+.nossa_escola .content h2{
+    font-size: 4rem;
+}
+.nossa_escola .content p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.mapa{
+    width: 960px;
+    margin: 0px auto;
+}
+.mapa p{
+    font-size: 1.6rem;
+    text-align: right;
+    margin: 32px 0px;
+}
 /****************************/
 
 .footer-main{
+    margin-top: 32px;
     padding: 16px;
     background-color: var(--neutral-dark);
     text-align: center;
