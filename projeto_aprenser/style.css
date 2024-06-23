@@ -13,39 +13,39 @@
 }
 
 html, body{
-    min-height: 100vh;
     font-size: 62.5%;
 }
-body{
-    display: flex;
-    flex-flow: column nowrap;
-}
 
-.area_protection{
+
+/*******************************/
+
+.limitar_centralizar{
     max-width: 1440px;
     margin: 44px auto;
 }
 
-.header-main{
+.background_header{
     background-color: var(--neutral-dark);
+    margin-top: 0px;
+    position: fixed;
+    width: 100%;
 }
 
-.header-main .area_protection{
+.background_header .header_main{
+    max-width: 1440px;
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    background-color: var(--neutral-dark);
     padding: 12px 64px;
 }
-.header-main-list{
+.header_main  .navigation{
     display: flex;
     list-style-type: none;
     align-items: center;
     gap: 12px;
 }
-.header-main-list li a{
+.header_main .navigation li a{
     color: var(--primary);
     text-decoration: none;
     text-transform: uppercase;
@@ -55,29 +55,30 @@ body{
     transition-duration: 0.2s;
     font-size: 2.5em;
 }
-.header-main-list li a:hover{
+.header_main .navigation li a:hover{
     background-color: var(--primary);
     color: var(--neutral-dark);
 }
 
 /****************************/
-.hero{
+.background_hero{
+    padding-top: 64px;
     background:linear-gradient(0deg, #FFEF61, #ffffff);
 }
-.hero .area_protection{
+#hero{
     display: flex;
     justify-content: space-around;
 }
-.hero img{
+#hero img{
     width: 40%;
 }
-.hero .content h1{
+#hero .content h1{
     font-size: 7rem;
     line-height: 1.1;
     font-weight: 600;
 }
 
-.hero .content{
+#hero .content{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -101,7 +102,7 @@ body{
     color: var(--primary);
 }
 
-.principais_cursos .area_protection{
+#principais_cursos{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -112,13 +113,13 @@ body{
     text-align: center;
     margin: 40px;
 }
-.principais_cursos .cursos{
+#principais_cursos .cursos{
     display: flex;
     justify-content: center;
     gap: 32px;
     padding: 0px 64px;
 }
-.principais_cursos .cursos .curso{
+#principais_cursos .cursos .curso{
     width: 28%;
     border-radius: 8px;
     overflow: hidden;
@@ -126,38 +127,38 @@ body{
     margin-bottom: 32px;
     transition-duration: .4s;
 }
-.principais_cursos .cursos .curso:hover{
+#principais_cursos .cursos .curso:hover{
     width: 32%;
     cursor: pointer;
 }
-.principais_cursos .cursos .curso img{
+#principais_cursos .cursos .curso img{
     width: 100%;
 }
-.principais_cursos .cursos .curso h3{
+#principais_cursos .cursos .curso h3{
     font-size: 2rem;
     margin: 12px;
 
 }
-.principais_cursos .cursos .curso p{
+#principais_cursos .cursos .curso p{
     font-size: 1.6rem;
     line-height: 1.6;
     padding: 0px 16px;
     margin: 0px auto 24px;
 }
 
-.nossa_escola{
+.background_nossa_escola{
     background-color: #003464;
 }
 
-.nossa_escola .area_protection{
+#nossa_escola{
     display: flex;
     color: white;
 }
-.nossa_escola img{
+#nossa_escola img{
     width: 50%;
 }
 
-.nossa_escola .content{
+#nossa_escola .content{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -165,21 +166,20 @@ body{
     padding: 64px;
 }
 
-.nossa_escola .content h2{
+#nossa_escola .content h2{
     font-size: 4rem;
 }
-.nossa_escola .content p{
+#nossa_escola .content p{
     font-size: 1.6rem;
     line-height: 1.6;
 }
-.mapa{
-    width: 960px;
-    margin: 0px auto;
+#contatos{
+    max-width: 1024px;
 }
-.mapa p{
+address{
+    margin: 24px 0px;
     font-size: 1.6rem;
     text-align: right;
-    margin: 32px 0px;
 }
 /****************************/
 
