@@ -21,7 +21,17 @@ body{
     flex-flow: column nowrap;
 }
 
+.area_protection{
+    max-width: 1440px;
+    margin: 44px auto;
+}
+
 .header-main{
+    background-color: var(--neutral-dark);
+}
+
+.header-main .area_protection{
+    margin: 0px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,9 +49,9 @@ body{
     color: var(--primary);
     text-decoration: none;
     text-transform: uppercase;
-    padding: 8px;
+    padding: 12px;
     border: 1px solid var(--primary);
-    border-radius: 8px;
+    border-radius: 4px;
     transition-duration: 0.2s;
     font-size: 2.5em;
 }
@@ -51,11 +61,12 @@ body{
 }
 
 /****************************/
-
 .hero{
+    background:linear-gradient(0deg, #FFEF61, #ffffff);
+}
+.hero .area_protection{
     display: flex;
     justify-content: space-around;
-    background:linear-gradient(0deg, #FFEF61, #ffffff);
 }
 .hero img{
     width: 40%;
@@ -90,7 +101,7 @@ body{
     color: var(--primary);
 }
 
-.principais_cursos{
+.principais_cursos .area_protection{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -136,9 +147,11 @@ body{
 
 .nossa_escola{
     background-color: #003464;
+}
+
+.nossa_escola .area_protection{
     display: flex;
     color: white;
-    margin-top: 40px;
 }
 .nossa_escola img{
     width: 50%;
