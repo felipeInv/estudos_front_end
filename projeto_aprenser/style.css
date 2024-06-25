@@ -31,9 +31,8 @@ html, body{
 
 .background_header{
     background-color: var(--neutral-dark);
-    margin-top: 0px;
-    position: fixed;
-    width: 100%;
+    position: sticky;
+    /* width: 100%; */
 }
 
 .background_header .header_main{
@@ -68,7 +67,7 @@ html, body{
 /****************************/
 .background_hero{
     padding-top: 64px;
-    background:linear-gradient(0deg, #FFEF61, #ffffff);
+    background:linear-gradient(0deg, var(--primary), #ffffff);
 }
 #hero{
     display: flex;
@@ -122,18 +121,18 @@ html, body{
     display: flex;
     justify-content: center;
     gap: 32px;
-    padding: 0px 64px;
+    padding: 0px 8rem;
 }
 #principais_cursos .cursos .curso{
-    width: 28%;
+    flex: 1;
     border-radius: 8px;
     overflow: hidden;
-    border: 1px solid gray;
+    border: 1px solid rgba(0, 0, 0, 0.25);
     margin-bottom: 32px;
     transition-duration: .4s;
 }
 #principais_cursos .cursos .curso:hover{
-    width: 32%;
+    flex: 1.2;
     cursor: pointer;
 }
 #principais_cursos .cursos .curso img{
@@ -158,6 +157,8 @@ html, body{
 #nossa_escola{
     display: flex;
     color: white;
+    gap: 3.2rem;
+    padding: 2rem 8rem 0rem;
 }
 #nossa_escola img{
     width: 50%;
@@ -168,7 +169,7 @@ html, body{
     flex-flow: column nowrap;
     justify-content: center;
     gap: 20px;
-    padding: 64px;
+    padding: 6.4rem;
 }
 
 #nossa_escola .content h2{
@@ -185,6 +186,7 @@ address{
     margin: 24px 0px;
     font-size: 1.6rem;
     text-align: right;
+    font-style: normal;
 }
 /****************************/
 
