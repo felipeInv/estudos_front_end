@@ -33,6 +33,7 @@ h1{
     overflow: hidden;
 }
 .gallery .container_image img{
+    width: 100%;
     transform: scale(1);
     transition: transform 0.5s ease-out;
     cursor: pointer;
