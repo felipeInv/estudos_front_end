@@ -12,7 +12,7 @@ html{
 }
 :root{
     --cor-primary: #31333B;
-    --cor-secondary: #00ac00;
+    --cor-secondary: #e99801;
     --cor-neutral: #E7E7E7;
     --width-header: 26rem;
 }
@@ -20,7 +20,10 @@ body{
     min-height: 100vh;
     background-image: url(../imagens/bg-unsplash.png);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
+    padding-right: 12em;
 }
 .header{
     background-color: var(--cor-primary);
@@ -29,12 +32,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 2rem;
+    padding: 4rem 2rem;
+    font-size: 1.6em;
+    position: fixed;
+
 }
-a:has(.perfil){
+a:has(.perfil_image){
     text-align: right;
 }
-.perfil{
+.perfil_image{
     width: 50%; 
     margin-bottom: 2rem;   
     margin-left: auto;
@@ -47,26 +53,23 @@ a:has(.perfil){
 }
 .navigation_list{
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
     width: 100%;
 }
 .navigation_list li{
     text-align: right;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.651);
+    border-bottom: 1px solid var(--cor-neutral);
 }
 .navigation_list li a{
-    font-size: 1.6em;
     display: inline-block;
-    color: rgba(255, 255, 255, 0.753);
+    color: var(--cor-neutral);
     text-decoration: none;
-    padding: 1em 0;
+    padding: 1.4em 0;
     width: 100%;
     transition-duration: 0.3s;
 }
 .navigation_list li a:hover{
     background-color: rgba(211, 211, 211, 0.2);
-    padding-right: 0.5em;
+    padding-right: 0.8em;
 }
 
 /******************************************************************/
@@ -76,10 +79,10 @@ a:has(.perfil){
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
+    margin-left: calc(var(--width-header));
 }
 .content section{
-    margin-top: 2.8rem;
-    margin-bottom: 2.8rem;
+    margin: 5.2rem 0px;
 }
 .title{
     font-size: 2em;
