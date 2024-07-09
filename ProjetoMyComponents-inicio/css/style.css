@@ -35,6 +35,12 @@ h3,h4,h5,h6{
     color: var(--cor-secondary);
     margin-bottom: 0.8em;
 }
+a{
+    color: inherit;
+}
+P, blockquote{
+    margin: 0.8em 0px;
+}
 /************************************************/
 .header{
     background-color: var(--cor-primary);
@@ -111,9 +117,7 @@ a:has(.perfil_image){
     color: var(--cor-neutral);
     margin-bottom: 1em;
 }
-h3 a{
-    color: inherit;
-}
+
 .social_list{
     font-style: normal;
     list-style-type: none;
