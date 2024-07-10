@@ -26,11 +26,6 @@ body{
     padding-right: 12em;
     color: var(--cor-neutral);
 }
-.content section > h3{
-    color: var(--cor-secondary);
-    margin-bottom: 0.8em;
-}
-
 h3,h4,h5,h6{
     color: var(--cor-secondary);
     margin-bottom: 0.8em;
@@ -41,9 +36,12 @@ a{
 P, blockquote{
     margin: 0.8em 0px;
 }
-article{
-    margin: 4.8rem 0px;
+article,
+section{
+    margin: 2rem 0px;
 }
+
+
 /************************************************/
 .header{
     background-color: var(--cor-primary);
@@ -103,9 +101,6 @@ a:has(.perfil_image){
     margin-left: calc(var(--width-header));
     padding-top: 5.2rem;
 }
-.content section{
-    margin-bottom: 5.2rem;
-}
 .title{
     font-size: 2em;
     color: var(--cor-secondary);
@@ -148,4 +143,23 @@ a:has(.perfil_image){
 }
 .content article{
     margin-bottom: 3.2rem;
+}
+/**********************************************/
+.card{
+    max-width: 740px;
+    background-color: var(--cor-primary);
+}
+.card_content{
+    padding: 1em;
+}
+.card_title{
+    font-size: 1.6em;
+    margin-bottom: 0.4em;
+}
+.card img{
+    max-width: 100%;
+}
+.row{
+    display: flex;
+    gap: 2rem;
 }
