@@ -13,7 +13,7 @@ html{
 :root{
     --cor-primary: #31333B;
     --cor-secondary: #e99801;
-    --cor-neutral: #E7E7E7;
+    --cor-neutral: #c7c7c7;
     --width-header: 26rem;
 }
 body{
@@ -23,7 +23,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
-    padding-right: 12em;
+    padding-right: 8em;
     color: var(--cor-neutral);
 }
 h3,h4,h5,h6{
@@ -38,10 +38,12 @@ P, blockquote{
 }
 article,
 section{
-    margin: 2rem 0px;
+    margin: 0px 0px 2rem 0px;
 }
 
-
+address{
+    line-height: 2;
+}
 /************************************************/
 .header{
     background-color: var(--cor-primary);
@@ -190,3 +192,5 @@ a:has(.perfil_image){
 .list_emoji{
     list-style-type: "\1f642";
 }
+/************************************************/
+
