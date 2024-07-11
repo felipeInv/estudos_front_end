@@ -26,7 +26,7 @@ body{
     padding-right: 8em;
     color: var(--cor-neutral);
 }
-h3,h4,h5,h6{
+h2,h3,h4,h5,h6{
     color: var(--cor-secondary);
     margin-bottom: 0.8em;
 }
