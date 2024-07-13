@@ -12,6 +12,7 @@ html{
 }
 :root{
     --cor-primary: #31333B;
+    --cor-primary-45: rgba(49, 51, 59, 0.45);
     --cor-primary-dark: #23252d;
     --cor-secondary: #e99801;
     --cor-neutral: #c7c7c7;
@@ -86,7 +87,7 @@ address{
 }
 /************************************************/
 .header{
-    background-color: var(--cor-primary);
+    background-color: var(--cor-primary-45);
     height: 100vh;
     flex: 0 0 var(--width-header);
     display: flex;
@@ -94,7 +95,9 @@ address{
     align-items: flex-end;
     padding: 4rem 2rem;
     font-size: 1.6em;
-    position: fixed;
+    position: sticky;
+    top: 0px;
+    left: 0px;
 
 }
 a:has(.perfil_image){
@@ -140,7 +143,7 @@ a:has(.perfil_image){
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-    margin-left: calc(var(--width-header));
+    margin-left: 4rem;
     padding-top: 5.2rem;
 }
 .title{
@@ -245,4 +248,36 @@ label:has(input){
 }
 .form_quiz{
     width: calc(50% - (var(--distance-gap)/ 2));
+}
+/************************************************/
+.table{
+    border-collapse: collapse;
+    margin-bottom: 4rem;
+}
+caption{
+    font-weight: bold;
+    color: var(--cor-secondary);
+    text-align: left;
+    margin-bottom: 0.4rem;
+}
+thead{
+    text-transform: uppercase;
+}
+.table:not(.table_alternate) td:not(tr:last-child td),
+.table:not(.table_alternate) th{
+    border-bottom: 2px solid var(--cor-primary-dark);
+}
+td,th{
+    text-align: left;
+    padding: 1.2rem;
+}
+.table tr :last-child{
+    text-align: right;
+}
+.table_alternate tbody tr:nth-child(odd){   
+    background-color: var(--cor-primary-dark);
+}
+.table_separate td:not(td:last-child),
+.table_separate th:not(th:last-child){
+    border-right: 2px solid var(--cor-primary-dark);
 }
