@@ -14,7 +14,7 @@ html{
     --cor-primary: #31333B;
     --cor-primary-45: rgba(49, 51, 59, 0.45);
     --cor-primary-dark: #23252d;
-    --cor-secondary: #e99801;
+    --cor-secondary: #0ba70b;
     --cor-neutral: #c7c7c7;
     --width-header: 26rem;
     --distance-gap: 3rem;
@@ -107,6 +107,7 @@ a:has(.perfil_image){
     width: 50%; 
     margin-bottom: 2rem;   
     margin-left: auto;
+    filter: drop-shadow(2px 2px 0px var(--cor-secondary));
 }
 .navigation{
     width: 100%;
