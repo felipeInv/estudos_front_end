@@ -1,1 +1,60 @@
 @charset "UTF-8";
+
+:root{
+    --primary-color: #017803;
+    --secondary-color: #eca200;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(0deg, rgb(00,255,00) 0%, red),url(imagens/tile.png);
+    background-attachment: fixed, scroll;
+    background-blend-mode: color, normal;
+
+}
+.cores{
+    width: 80%;
+    border: 8px dashed color-mix(in srgb, var(--primary-color), yellow);
+    margin: 20px auto;
+    padding: 26px;
+}
+.cores p{
+    margin: 0px;
+}
+section{    
+    counter-reset: contador;
+}
+.cores{
+    counter-increment: contador;
+}
+.cores::before{
+    content: "[ " counter(contador) " ]";
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.cores:nth-child(2){
+    background-color: var(--secondary-color);
+    background-clip: border-box;
+}
+.cores:nth-child(3){
+    background-color: var(--secondary-color);
+    background-clip: padding-box;
+}
+.cores:nth-child(4){
+    background-color: var(--secondary-color);
+    background-clip: content-box;
+}
+.cores:nth-child(5){
+    background-color: hsl(130deg, 100%, 60%);
+    transition-duration: 0.18s;
+    box-shadow: 3px 3px 6px hsl(130deg, 100%, 30%) none;
+}
+.cores:nth-child(5):hover{
+    background-color: hsl(130deg, 100%, 30%);
+    color: hsl(130deg, 100%, 100%);
+    box-shadow: 6px 6px 6px hsl(130deg 100% 0% / 0.5) inset;
+}
+.cores:nth-child(6){
+    background-image: linear-gradient(70deg, orange, transparent), linear-gradient(250deg, green, transparent);
+    background-clip: padding-box, content-box;
+}
