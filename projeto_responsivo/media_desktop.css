@@ -3,8 +3,9 @@
 .card_wrapper{
     container: cardWrapper / inline-size;
 }
-main{
-    container: main / inline-size;    
+.main{
+    container-type: inline-size;
+    container-name: principal;    
 }
 
 @container cardWrapper (min-width: 35em){
