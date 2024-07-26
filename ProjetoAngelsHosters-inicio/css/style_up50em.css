@@ -16,19 +16,22 @@
         padding: 1rem 2rem;
     }
 
-    .header_main--navigation {
+    .header_main__navigation {
         width: auto;
     }
 
-    .header_main--navigation--list {
+    .header_main__navigation__list {
         flex-direction: row;
         gap: 1.6rem;
         background-color: transparent;
     }
-    .header_main--navigation--list li:not(.header_main--navigation--list li:last-child){
+    .header_main__navigation__list li:not(.header_main__navigation__list li:last-child){
         border: none;
     }
-    .header_main--navigation--list a {
+    .header_main__navigation__list a {
         color: var(--color-primary);
+    }
+    .header_main__navigation__list a:hover {
+        background-color: transparent;
     }
 }
