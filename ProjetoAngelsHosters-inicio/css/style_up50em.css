@@ -1,14 +1,5 @@
 @charset "UTF-8";
 
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-
-    --color-primary: rgb(99, 5, 128);
-}
-
 @media screen and (min-width: 50em) {
     .header_main {
         flex-direction: row;
@@ -33,5 +24,20 @@
     }
     .header_main__navigation__list a:hover {
         background-color: transparent;
+    }
+
+    /**********************************************************/
+
+    .hero_main{
+        background-color: var(--color-primary);
+    }
+    .hero_main *{
+        color: white;
+    }
+    .hero_main__icon{
+        display: block;
+    }
+    .hero_main > div.max_width > p{
+        width: 80%;
     }
 }
