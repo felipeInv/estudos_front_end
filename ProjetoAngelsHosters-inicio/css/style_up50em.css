@@ -27,7 +27,7 @@
     }
 
     /**********************************************************/
-
+    
     .hero_main{
         background-color: var(--color-primary);
     }
@@ -39,5 +39,11 @@
     }
     .hero_main > div.max_width > p{
         width: 80%;
+    }
+
+    /**********************************************************/
+
+    .col_md_6{
+        width: calc(50% - var(--space-elements-sm));
     }
 }

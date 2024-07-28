@@ -20,4 +20,10 @@
     .hero_main .hero_main__title, .hero_main p{
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
     }
+
+    /***********************************************/
+
+    .col_xl_3{
+        width: calc(25% - var(--space-elements-sm));
+    }
 }
