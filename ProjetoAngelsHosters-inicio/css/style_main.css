@@ -8,8 +8,9 @@
 
     --color-primary: rgb(99, 5, 128);
 
-    --space-elements-sm: 1.2rem;
-    --space-elements-md: 2rem;
+    --space-elements-sm: 1rem;
+    --space-elements-md: 2.4rem;
+    --space-elements-lg: 3.4rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
@@ -19,17 +20,22 @@ body{
     flex-direction: column;
     align-items: center;
 }
+main{
+    width: 100%;
+}
 h1,h2,h3,h4,h5,h6{
     font-family: "Oxygen", sans-serif;
 }
 .row{
     display: flex;
     flex-flow: row wrap;
-    gap: var(--space-elements-sm);
+    justify-content: space-between;
+    column-gap: var(--space-elements-sm);
 }
 .max_width{
     width: 100%;
     max-width: 64rem;
+    margin: 0 auto;
 }
 button.btn{
     border: none;
@@ -150,4 +156,56 @@ button.btn{
 }
 .col_sm_12{
     width: 100%;
+}
+
+/************************************************************/
+
+.main_content{
+    padding: 0px var(--space-elements-md);
+}
+.main_content__title{
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: 1rem;
+    letter-spacing: 3px;
+    font-weight: normal;
+    
+}
+.main_content__article__container{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-elements-sm);
+    margin: var(--space-elements-md) 0px;
+}
+.main_content__content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-elements-sm);
+}
+.main_content__article__container__image img{
+    width: 100%;
+}
+.main_content__content p{
+    line-height: 1.5;
+}
+
+/************************************************************/
+
+.footer_main{
+    width: 100%;
+    margin-top: var(--space-elements-lg);
+    background-color: hsl(202, 19%, 15%);
+    color: white;
+    padding: var(--space-elements-md) var(--space-elements-lg);
+    text-align: center;
+}
+.footer_main > div{
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-elements-sm);
+    align-items: center;
+}
+.footer_main *{
+    font-weight: normal;
+    color: color-mix(in srgb, white, transparent 35%);
 }

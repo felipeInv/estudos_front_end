@@ -22,8 +22,18 @@
     }
 
     /***********************************************/
-
+    .middle_content .row{
+        gap: var(--space-elements-sm);
+    }
     .col_xl_3{
         width: calc(25% - var(--space-elements-sm));
     }
+
+    /**********************************************************/
+    .col_xl_6{
+        width: calc(50% - var(--space-elements-sm));
+    }
+    /* .main_content__article__container__image{
+        width: 180%;
+    } */
 }

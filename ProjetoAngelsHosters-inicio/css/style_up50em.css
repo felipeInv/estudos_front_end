@@ -42,8 +42,8 @@
     }
 
     /**********************************************************/
-
     .col_md_6{
-        width: calc(50% - var(--space-elements-sm));
+        width: calc(50% - var(--space-elements-md));
     }
+    
 }
