@@ -11,81 +11,93 @@
             box-sizing: border-box;
         }
         body{
-            background-image: linear-gradient(to top, rgb(93, 0, 168), rgb(124, 0, 226));
+            background-image: linear-gradient(to top, rgb(41, 31, 128), rgb(90, 31, 185));
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .calculadora{
-            background-image: linear-gradient(to top, hsl(216, 100%, 50%), rgb(40, 84, 151));
+        #calculator{
+            background-image: linear-gradient(130deg, hsl(216, 59%, 54%), rgb(49, 73, 109));
             padding: 1rem;
             width: 300px;
             border-radius: 10px;
             box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.445);
         }
-        .output{
+        #output{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            font-size: 2rem;
+            padding: 0.3rem;
             width: 100%;
             height: 60px;
             margin-bottom: 1rem;
             background-image: linear-gradient(to top, rgb(34, 34, 34), rgb(51, 51, 51));
+
+            color: white;
         }
         .inputs{
             display: grid;
             gap: 0.5rem;
-            grid-template-columns: repeat(4, 60px);
+            grid-template-columns: repeat(4, 1fr);
             grid-auto-rows: 60px;
         }
-        .inputs > div{
+        .inputs > button{
             color: white;
+            background-color: transparent;
             background-image: linear-gradient(to top, rgb(34, 34, 34), rgb(51, 51, 51));
             padding: 5px;
             text-align: center;
             align-content: center;
+            font-size: 1.1rem;
+
+            border-width: 2px;
+            border-style: outset;
+            border-color: rgba(211, 211, 211, 0.3) black black rgba(211, 211, 211, 0.3);
+            border-image: initial;
 
             transition: all 0.2s;
         }
-        .add{
+        .grid-row-span2{
             grid-row: span 2;
         }
-        .zero{
+        .grid-column-span2{
             grid-column: span 2;
         }
 
         /******* HOVER **********/
 
-        .inputs div:hover{
-            background-image: none;
+        .inputs button:hover{
             background-color: rgba(211, 211, 211, 0.438);
+            background-image: none;
             color: black;
         }
     </style>
 </head>
 <body>
-    <main class="calculadora">
-        <div class="output"></div>
+    <main id="calculator">
+        <output id="output">03</output>
         <section class="inputs">
-            <div>AC</div>
-            <div>%</div>
-            <div>x</div>
-            <div>/</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>=</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>-</div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div class="add">+</div>
-            <div class="zero" onclick="por_numero()">opa</div>
-            <div>.</div>
+            <button>AC</button>
+            <button>%</button>
+            <button>x</button>
+            <button>/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>=</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class="grid-row-span2">+</button>
+            <button class="grid-column-span2">0</button>
+            <button>.</button>
         </section>
     </main>
-
-    <script src="app.js"></script>
 </body>
 </html>
