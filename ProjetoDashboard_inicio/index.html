@@ -9,10 +9,9 @@
 </head>
 
 <body>
-    <header class="header_navigation">
+    <nav class="navigation">
         <a href="#" class="title">Dashboard</a>
-        <nav>
-            <ul class="header_navigation__list">
+            <ul class="navigation__list">
                 <li>
                     <a href="#">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -100,7 +99,6 @@
                 </li>
                 <li>
             </ul>
-        </nav>
         <a href="#" class="logout">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.3125 8.0625L20.25 12L16.3125 15.9375" stroke="#5A5A5F" stroke-width="2"
@@ -113,7 +111,7 @@
             </svg>
             Logout
         </a>
-    </header>
+    </nav>
     <header class="header_top">
         <nav>
             <ul class="header_top__list">
@@ -147,35 +145,38 @@
             </ul>
         </nav>
         <div class="user">
-            <p class="user_name">Luiz Felipe Veiga</p>
-            <p>Full-stack</p>
+            <div class="user_texts">
+                <p class="user_name">Luiz Felipe Veiga</p>
+                <p>Full-stack</p>
+            </div>
+            <img src="imagens/perfil.png" alt="">
         </div>
     </header>
     <main class="main">
-        <aside class="summary">
-            <div class="summary_item">
+        <section class="summary">
+            <article class="summary_item">
                 <p>Announced Today</p>
                 <p class="summary_item__number">235600</p>
-            </div>
-            <div class="summary_item">
+            </article>
+            <article class="summary_item">
                 <p>Prepared Today</p>
                 <p class="summary_item__number">16728</p>
-            </div>
-            <div class="summary_item">
+            </article>
+            <article class="summary_item">
                 <p>sorted Today</p>
                 <p class="summary_item__number">286</p>
-            </div>
+            </article>
             <button class="btn">See more</button>
-        </aside>
-        <section class="chart_announced">
+        </section>
+        <figure class="chart_announced">
             <img src="imagens/chart1.png" alt="">
-        </section>
-        <section class="chart_sorted">
+        </figure>
+        <figure class="chart_sorted">
             <img src="imagens/chart2.png" alt="">
-        </section>
-        <section class="chart_distributed">
+        </figure>
+        <figure class="chart_distributed">
             <img src="imagens/chart3.png" alt="">
-        </section>
+        </figure>
     </main>
 </body>
 

@@ -31,6 +31,9 @@ body{
 /*********************************/
 
 .header_top{
+    position: sticky;
+    top: 0px;
+    
     grid-row: 1 / 2;
     grid-column: 2 / -1;
     background-color: white;
@@ -45,8 +48,23 @@ body{
     display: flex;
     gap: 2rem;
 }
+.header_top__list li a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 .user{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 100%;
+}
+.user img{
+    height: 70%;
+}
+.user_texts{
+    text-align: right;
 }
 .user_name{
     font-weight: bold;
@@ -56,7 +74,7 @@ body{
 /*************************************/
 
 
-.header_navigation{
+.navigation{
     position: sticky;
     top: 0px;
     left: 0px;
@@ -80,14 +98,14 @@ body{
     font-size: 1.6rem;
     text-decoration: none;
 }
-.header_navigation__list{
+.navigation__list{
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     border-bottom: 1px solid lightgray;
 }
-.header_navigation__list a,
+.navigation__list a,
 .logout{
     text-decoration: none;
     display: flex;
@@ -95,12 +113,7 @@ body{
     gap: 0.5rem;
 }
 
-.header_top__list li a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
+
 /*******************************************/
 
 .main{
