@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <header>
+    <header class="header_navigation">
         <a href="#" class="title">Dashboard</a>
         <nav>
-            <ul>
+            <ul class="header_navigation__list">
                 <li>
                     <a href="#">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -99,25 +99,24 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M16.3125 8.0625L20.25 12L16.3125 15.9375" stroke="#5A5A5F" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M9.75 12H20.25" stroke="#5A5A5F" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75"
-                                stroke="#5A5A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                        Logout
-                    </a>
-                </li>
             </ul>
         </nav>
+        <a href="#" class="logout">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.3125 8.0625L20.25 12L16.3125 15.9375" stroke="#5A5A5F" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.75 12H20.25" stroke="#5A5A5F" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                <path
+                    d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75"
+                    stroke="#5A5A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            Logout
+        </a>
     </header>
-    <header>
+    <header class="header_top">
         <nav>
-            <ul>
+            <ul class="header_top__list">
                 <li>
                     <a href="#">
                         <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -147,8 +146,37 @@
                 </li>
             </ul>
         </nav>
+        <div class="user">
+            <p class="user_name">Luiz Felipe Veiga</p>
+            <p>Full-stack</p>
+        </div>
     </header>
-    <main></main>
+    <main class="main">
+        <aside class="summary">
+            <div class="summary_item">
+                <p>Announced Today</p>
+                <p class="summary_item__number">235600</p>
+            </div>
+            <div class="summary_item">
+                <p>Prepared Today</p>
+                <p class="summary_item__number">16728</p>
+            </div>
+            <div class="summary_item">
+                <p>sorted Today</p>
+                <p class="summary_item__number">286</p>
+            </div>
+            <button class="btn">See more</button>
+        </aside>
+        <section class="chart_announced">
+            <img src="imagens/chart1.png" alt="">
+        </section>
+        <section class="chart_sorted">
+            <img src="imagens/chart2.png" alt="">
+        </section>
+        <section class="chart_distributed">
+            <img src="imagens/chart3.png" alt="">
+        </section>
+    </main>
 </body>
 
 </html>
