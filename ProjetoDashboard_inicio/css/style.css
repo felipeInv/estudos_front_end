@@ -21,8 +21,8 @@
 body{
     min-height: 100vh;
     display: grid;
-    grid-template-columns: 13% 1fr;
-    grid-template-rows: 7% 93%;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: 4rem minmax( calc(100vh - 4rem), auto);
     grid-auto-rows: 1fr;
     background-color: var(--color-gray);
 }
@@ -32,6 +32,8 @@ body{
     color: white;
     border-radius: 6px;
     border: none;
+
+    cursor: pointer;
 }
 
 
@@ -111,14 +113,19 @@ body{
     text-decoration: none;
 }
 .navigation__list{
+    width: 100%;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     gap: var(--spacing-default);
     border-bottom: 1px solid var(--color-gray);
 }
+.navigation__list li{
+    width: 100%;
+}
 .navigation__list a,
 .logout{
+    width: 100%;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -145,11 +152,15 @@ body{
     border-radius: 8px;
     padding: var(--spacing-default);
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr auto;
+    display: flex;
+    justify-content: space-between;
 }
-
+.summary .btn{
+    min-width: fit-content;
+}
 .summary_item{
+    width: 100%;
+    padding: 0px 1rem;
     display: flex;
     gap: var(--spacing-default);
     justify-content: center;
