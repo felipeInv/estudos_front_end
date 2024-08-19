@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes anda {
+            from{
+                transform: translateX(0px);
+                background-color: yellow;
+            }
+            50%{
+                background-color: green;
+            }
+            to{
+                transform: translateX(300px);
+                background-color: blue;
+            }
+        }
+
+        #anima{
+            outline: 3px solid darkgreen;
+            width: 400px;
+        }
+        #anima div{
+            width: 100px;
+            height: 50px;
+            background-color: #aaaaaa;
+            margin-bottom: 1rem;
+        }
+        #anima div:nth-child(1){
+            animation-name: anda;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+            animation-direction: alternate;
+        }
+        #anima div:nth-child(2){
+            animation: anda 2s ease-in 0.5s 3 alternate both running;
+        }
+        #anima div:nth-child(2):hover{
+            animation: anda 2s ease-in 0.5s 3 alternate both paused;
+        }
+    </style>
+</head>
+<body>
+    <div id="anima">
+        <div>1</div>
+        <div>2</div>
+    </div>
+</body>
+</html>
